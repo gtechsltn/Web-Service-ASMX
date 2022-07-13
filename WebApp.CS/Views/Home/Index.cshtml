@@ -1,0 +1,25 @@
+﻿@{
+    Layout = null;
+    var awsAccessKeyId = ViewBag.AwsAccessKeyId == null ? "" : ViewBag.AwsAccessKeyId;
+    var awsSecretKey = ViewBag.AwsSecretKey == null ? "" : ViewBag.AwsSecretKey;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        Welcome to ASP.NET (C#)
+    </div>
+    <p>
+        AwsAccessKeyId: <strong>@awsAccessKeyId</strong>
+    </p>
+    <p>
+        AwsSecretKey: <strong>@awsSecretKey</strong>
+    </p>
+</body>
+</html>
